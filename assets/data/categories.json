@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "name":"Lips"
+    },
+    {
+        "id":2,
+        "name":"Face"
+    },
+    {
+        "id":3,
+        "name":"Eyes"
+    },
+    {
+        "id":4,
+        "name":"Eyebrows"
+    }
+]
