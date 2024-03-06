@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 function ajaxCallback(url,result){
   $.ajax({
     url: url,
@@ -9,7 +11,7 @@ function ajaxCallback(url,result){
     }
 })
 }
-ajaxCallback("../assets/data/meni.json", function(result){
+ajaxCallback("assets/data/meni.json", function(result){
   ispisNavigacije(result);
 })
 
@@ -26,7 +28,7 @@ function ispisNavigacije(nizNavigacioniMeni){
 }
 
 let url = window.location.pathname;
-if(url === '/mystic/' || url.includes('index.html')){
+if(url === 'https://github.com/zokag/mystic' || url.includes('index.html')){
   ajaxCallback("../assets/data/artikli.json", function(result){
     prikaziPodatke(result);
   })
@@ -148,3 +150,5 @@ var socialMediaIcons = ['facebook', 'twitter', 'instagram']; // Popis društveni
   }
   
   createSocialIcons();
+
+})
