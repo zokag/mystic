@@ -27,7 +27,8 @@ function ispisNavigacije(nizNavigacioniMeni){
 
 }
 
-
+let url = window.location.pathname;
+if(url == "/mystic/" || url.includes('index.html')){
   ajaxCallback("assets/data/artikli.json", function(result){
     prikaziPodatke(result);
   })
@@ -67,7 +68,7 @@ function ispisNavigacije(nizNavigacioniMeni){
       }
       document.querySelector('.customers').innerHTML=ispis
   }
-
+}
 
 
 //sign-in form start
