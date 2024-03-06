@@ -28,8 +28,8 @@ function ispisNavigacije(nizNavigacioniMeni){
 }
 
 let url = window.location.pathname;
-if(url === 'https://github.com/zokag/mystic' || url.includes('index.html')){
-  ajaxCallback("../assets/data/artikli.json", function(result){
+if(url == "/mystic/" || url.includes('index.html')){
+  ajaxCallback("assets/data/artikli.json", function(result){
     prikaziPodatke(result);
   })
   function prikaziPodatke(sviPodaciJSON){
@@ -56,7 +56,7 @@ if(url === 'https://github.com/zokag/mystic' || url.includes('index.html')){
     }
   
   
-    ajaxCallback("../assets/data/favorites.json", function(result){
+    ajaxCallback("assets/data/favorites.json", function(result){
       prikaziFavorite(result);
     })
   function prikaziFavorite(podaciZaFavorite){
